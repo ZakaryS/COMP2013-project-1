@@ -42,28 +42,28 @@
   display: flex;
   justify-content: space-between;
 
-  /* max-width: 800px; */
-  /* border: 1px solid white; */
+  max-width: 1200px;
+  border: 1px solid white;
 }
 
 .CartContainer {
   width: 25%;
   justify-content: center;
 
-  /* position: sticky; */
-  /* top: 0; Adjust this value as needed */
-  /* max-height: 100vh; Ensure it doesn't exceed the viewport height */
-  /* overflow-y: auto; Add scroll if content exceeds the container height */
+  position: sticky;
+  top: 0; /* Adjust this value as needed */
+  max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
+  overflow-y: auto; /* Add scroll if content exceeds the container height */
 
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 .CartCard {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   border: 2px wheat solid;
   border-radius: 10px;
   margin: 10px;
@@ -72,8 +72,8 @@
 }
 
 .CartCardInfo {
-  /* display: flex;
-  justify-content: space-around; */
+  display: flex;
+  justify-content: space-around;
   width: 50%;
 }
 
@@ -83,7 +83,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 .ProductCard {
@@ -121,7 +121,7 @@ img {
 }
 
 .counter-container {
-  /* border: 1px solid white; */
+  border: 1px solid white;
   display: flex;
   width: 70%;
   height: 20px;
