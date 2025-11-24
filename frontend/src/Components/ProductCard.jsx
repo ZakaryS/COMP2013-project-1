@@ -1,6 +1,7 @@
 import QuantityCounter from "./QuantityCounter";
 
 export default function ProductCard({ 
+    _id,
     productQuantity,
     image,
     productName,
@@ -8,6 +9,8 @@ export default function ProductCard({
     handleAddToQuantity,
     handleRemoveQuantity,
     handleAddToCart,
+    handleOnDelete,
+    handleOnEdit,
 }) {
     return (
     <div className="ProductCard">
@@ -21,8 +24,10 @@ export default function ProductCard({
         mode="product"
         />
         <p>
-            Total Price: $ {(productQuantity.quantity * productQuantity.currentPrice).toFixed(2)}
+            ${productQuantity.currentPrice.toFixed(2)}
         </p>
         <button onClick={() => handleAddToCart(productQuantity)}>Add To Cart</button>
+        <button className="EditButton" onClick={() => handleOnEdit(_id)}>Edit</button>
+        <button className="RemoveButton" onClick={() => handleOnDelete(_id)}>Delete</button>
     </div>
 )}

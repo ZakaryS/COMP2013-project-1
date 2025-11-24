@@ -15,7 +15,7 @@ export default function CartCard({
         <div className="CartCard">
             <img src={image} alt="" height="30" />
             <h4>{productName}</h4>
-            <p>${currentPrice}</p>
+            <p>${currentPrice.toFixed(2)}</p>
             <QuantityCounter
             productQuantity={productQuantity}
             handleAddToQuantity={handleAddToQuantity}
